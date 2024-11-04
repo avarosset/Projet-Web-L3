@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style général pour le corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F9F5F0;
+}
+
+
+.photo-container{
+    display: flex;
+    justify-content: center;
+    width: 307px;
+    height: 170px;
+    flex-shrink: 0;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; /* Espace entre les liens */
+    padding: 10px 0;
+}
+
+/* Styles pour chaque lien du menu */
+.menu a {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline; 
+}
+
+
+
+.accueil-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto; /* Centre l'image */
+}
+
+h1{
+    color: #000;
+    text-align: center;
+    font-family: "Liu Jian Mao Cao";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+    position: relative;
+}
+
