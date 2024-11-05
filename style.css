@@ -9,16 +9,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: #F9F5F0;
 }
 
-
-.photo-container{
+header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 307px;
-    height: 170px;
-    flex-shrink: 0;
+    align-items: center;
+}
+
+
+.logo{
+    width: 200px;
 }
 
 /* Menu */
@@ -48,7 +53,12 @@ body {
     text-decoration: underline; 
 }
 
-
+#accueil{
+    background-image: url("images/IMAGE-ACCUEIL.png");
+    background-size: cover;    
+    height: 200px;
+    width:100%;
+}
 
 .accueil-image {
     width: 100%;
@@ -68,3 +78,10 @@ h1{
     position: relative;
 }
 
+p{
+    font-family: "Inter";
+}
+
+#texte-intro{
+    padding-inline: 10%;
+}
