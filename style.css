@@ -31,7 +31,7 @@ main {
     gap: 50px;
 }
 
-section{
+section {
     width: 100%;
 }
 
@@ -175,7 +175,7 @@ h1 {
     font-family: Livvic;
     font-size: 75px;
     font-style: normal;
-    font-weight:100;
+    font-weight: 100;
     line-height: normal;
     text-decoration: none;
     text-align: left;
@@ -192,13 +192,17 @@ h1 {
 .artwork {
     overflow: hidden;
     text-align: center;
-    background-color: white;
 }
 
-.artwork img {
-    width: 344px;
-    height: 261px; /* Hauteur fixe pour toutes les images */
-    object-fit: cover; /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
+.artwork div.tableau {
+    max-width: 344px;
+    height: 261px;
+    /* Hauteur fixe pour toutes les images */
+    object-fit: cover;
+    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .artwork-details {
@@ -212,4 +216,53 @@ h1 {
     font-size: 16px;
     margin-top: 10px;
     color: #333;
+}
+
+#eclats-de-silence {
+    background-image: url("images/eclats-de-silence.png");
+}
+
+#les-coeurs-du-crepuscule {
+    background-image: url("images/les-coeurs-du-crepuscule.png");
+}
+
+#tempete-emotionnelle {
+    background-image: url("images/tempete-emotionnelle.png");
+}
+
+#l-ombre-des-souvenirs {
+    background-image: url("images/l-ombre-des-souvenirs.png");
+}
+
+#souffle-de-solitude {
+    background-image: url("images/souffle-de-solitude.png");
+}
+
+#murmures-du-chaos {
+    background-image: url("images/murmures-du-chaos.png");
+}
+
+.artwork-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.artwork-title {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
 }
