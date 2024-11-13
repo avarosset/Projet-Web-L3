@@ -14,14 +14,14 @@ body {
     background-color: #F9F5F0;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,11 @@ main{
     gap: 50px;
 }
 
-#paul-dechewsky{
+section{
+    width: 100%;
+}
+
+#paul-dechewsky {
     color: #000;
     text-align: center;
     font-family: "Liu Jian Mao Cao";
@@ -43,7 +47,7 @@ main{
     position: relative;
 }
 
-.barre-horizontale{
+.barre-horizontale {
     width: 200px;
     height: 4px;
     background-color: #545470;
@@ -53,9 +57,12 @@ main{
     display: inline-block;
     padding: 10px 20px;
     font-size: 20px;
-    color: black; /* Couleur du texte */
-    background-color: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
-    font-family: Arial, sans-serif; /* Police de caractères */
+    color: black;
+    /* Couleur du texte */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fond semi-transparent */
+    font-family: Arial, sans-serif;
+    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -70,23 +77,24 @@ main{
 }
 
 
-.logo{
+.logo {
     width: 200px;
 }
 
 /* Menu */
 .menu {
     display: flex;
-    justify-content: center; 
-    gap: 30px; /* Espace entre les liens */
+    justify-content: center;
+    gap: 30px;
+    /* Espace entre les liens */
     padding: 10px 0;
 }
 
 /* Styles pour chaque lien du menu */
 .menu a {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -98,14 +106,14 @@ main{
 }
 
 .menu a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-#accueil{
+#accueil {
     background-image: url("images/IMAGE-ACCUEIL.png");
-    background-size: cover;    
+    background-size: cover;
     height: 200px;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -115,21 +123,23 @@ main{
 .accueil-image {
     width: 100%;
     display: block;
-    margin: 0 auto; /* Centre l'image */
+    margin: 0 auto;
+    /* Centre l'image */
 }
 
-h1, p{
+h1,
+p {
     font-family: "Inter";
 }
 
-h1{
+h1 {
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
 }
 
-.art-expressioniste{
+.art-expressioniste {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,21 +147,69 @@ h1{
     gap: 50px;
 }
 
-#gris{
+#gris {
     color: #545470;
 }
 
-.img-texte{
+.img-texte {
     display: flex;
     gap: 50px;
 }
 
-.img-texte img{
-    width: 50%;
+.img-texte img {
+    width: 40%;
 }
 
-.img-texte div{
+.img-texte div {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.la-galerie span {
+    color: #000000;
+}
+
+.la-galerie h1 {
+    color: #545470;
+    font-family: Livvic;
+    font-size: 75px;
+    font-style: normal;
+    font-weight:100;
+    line-height: normal;
+    text-decoration: none;
+    text-align: left;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.artwork {
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.artwork img {
+    width: 344px;
+    height: 261px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
+}
+
+.artwork-details {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.artwork-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
 }
