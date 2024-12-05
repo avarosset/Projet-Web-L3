@@ -170,7 +170,7 @@ h1 {
     color: #000000;
 }
 
-.la-galerie h1 {
+.la-galerie h1, .nos-expositions h1 {
     color: #545470;
     font-family: Livvic;
     font-size: 75px;
@@ -184,19 +184,24 @@ h1 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     max-width: 1200px;
-    margin: 20px;
+    margin: 0 auto;
 }
 
 .artwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     text-align: center;
+    max-width: 344px;
+    height: 261px;
 }
 
 .artwork div.tableau {
-    max-width: 344px;
-    height: 261px;
+    width: 100%;
+    height: 100%;
     /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
@@ -242,6 +247,15 @@ h1 {
     background-image: url("images/murmures-du-chaos.png");
 }
 
+#chagall-couleurs-et-reveries {
+    background-image: url("images/expo1.jpg");
+}
+
+#l-expression-brute-de-kikoine {
+    background-image: url("images/expo2.jpg");
+}
+
+
 .artwork-details {
     display: flex;
     flex-direction: column;
@@ -265,4 +279,48 @@ h1 {
     font-style: italic;
     font-weight: 300;
     line-height: normal;
+}
+
+.gallery-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.gallery-2 .artwork{
+    width: 100%;
+    max-width: 560px;
+    height: 481px;
+    gap: 20px;
+}
+
+.gallery-2 .artwork-details {
+    background-color: rgba(134, 134, 167, 0.8);
+    color: black;
+    font-size: 17px;
+    padding-block: 15px;
+}
+
+.gallery-2 .artwork-title{
+    margin: 0;
+}
+
+.nos-expositions{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.horaires{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.horaires i.fa-regular.fa-clock{
+    font-size: 35px;
 }
