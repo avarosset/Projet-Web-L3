@@ -166,14 +166,14 @@ h1 {
     gap: 20px;
 }
 
-.la-galerie span {
+.la-galerie span, .nos-expositions span, .nos-services span {
     color: #000000;
 }
 
-.la-galerie h1, .nos-expositions h1 {
+.la-galerie h1, .nos-expositions h1, .nos-services h1 {
     color: #545470;
     font-family: Livvic;
-    font-size: 75px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -204,6 +204,7 @@ h1 {
     height: 100%;
     /* Hauteur fixe pour toutes les images */
     object-fit: cover;
+    background-size: cover;
     /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
@@ -261,7 +262,7 @@ h1 {
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(45, 45, 47, 0.8);
     color: white;
     text-align: center;
     font-family: Inter;
@@ -323,4 +324,58 @@ h1 {
 
 .horaires i.fa-regular.fa-clock{
     font-size: 35px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.service i{
+    font-size: 30px;
+    color: white;
+}
+
+.service .rond{
+    background: red;
+    border-radius: 100%;
+    padding: 10px;
+    width: 62px;
+    height: 62px;
+    background-color: #545470;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h2{
+    font-size: 25px;
+}
+
+.service .textes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+h2{
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    color: #545470;
 }
