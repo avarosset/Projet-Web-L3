@@ -379,3 +379,24 @@ h2{
     text-align: center;
     color: #545470;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    gap: 20px;
+    background-color: #3A3939;
+}
+
+footer p{
+    color: white;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
