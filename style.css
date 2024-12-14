@@ -433,7 +433,6 @@ footer p {
     gap: 40px;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .plan-et-mail p {
@@ -477,7 +476,6 @@ footer p {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    border: 1px solid green;
 }
 
 .contact{
