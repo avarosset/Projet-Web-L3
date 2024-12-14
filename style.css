@@ -170,6 +170,8 @@ h1 {
     color: #000000;
 }
 
+
+
 .la-galerie h1, .nos-expositions h1, .nos-services h1 {
     color: #545470;
     font-family: Livvic;
@@ -180,6 +182,8 @@ h1 {
     text-decoration: none;
     text-align: left;
 }
+
+
 
 .gallery {
     display: grid;
@@ -399,4 +403,55 @@ footer p{
     font-weight: 400;
     line-height: normal;
     text-align: center;
+}
+
+#plan {
+    width: 100%;
+}
+
+.plan-et-mail {
+    max-width: 776px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.plan-et-mail p {
+    font-size: 25px;
+}
+
+.email-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 476px;
+    background: #F5F5F5;
+    color: #939393;
+}
+
+.submit-button {
+    background: #F5F5F5;
+    color: #222222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #545470;
+    color: #F5F5F5;
+    transition: 0.3s;
+}
+
+.plan-et-mail form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }

@@ -73,7 +73,10 @@
             </div>
         </section>
         <section class="la-galerie" id="galerie">
-            <h1><span>LA</span> GALERIE</h1>
+            <div class="titre">
+                <h1><span>LA</span> GALERIE</h1>
+                <hr class="barre-horizontale">
+            </div>
             <div class="gallery">
                 <div class="artwork">
                     <div class="tableau" alt="Éclats de Silence" id="eclats-de-silence">
@@ -119,7 +122,10 @@
             </div>
         </section>
         <section class="nos-expositions" id="expositions">
-            <h1><span>NOS</span> EXPOSITIONS</h1>
+            <div class="titre">
+                <h1><span>NOS</span> EXPOSITIONS</h1>
+                <hr class="barre-horizontale">
+            </div>
             <p>La galerie Dechewsky vous invite chaque <b>vendredi du mois</b> à ses expositions dédiées à l'art
                 expressionniste. Découvrez des œuvres inédites de Soutine, Modigliani, Chagall, Picasso et d'autres
                 artistes majeurs.</p>
@@ -144,10 +150,13 @@
                 </div>
         </section>
         <section class="nos-services" id="services">
-            <h1><span>NOS</span> SERVICES</h1>
+            <div class="titre">
+                <h1><span>NOS</span> SERVICES</h1>
+                <hr class="barre-horizontale">
+            </div>
             <div class="services">
                 <div class="service">
-                    <div class="rond"><i class="fa-solid fa-truck" ></i></div>
+                    <div class="rond"><i class="fa-solid fa-truck"></i></div>
                     <h2>LIVRAISON</h2>
                     <div class="textes">
                         <p>Grâce à notre réseau de transporteurs spécialisés, vos œuvres sont expédiées avec <b>soin</b>
@@ -161,7 +170,7 @@
                     </div>
                 </div>
                 <div class="service">
-                    <div class="rond"><i class="fa-solid fa-bell-concierge" ></i></div>
+                    <div class="rond"><i class="fa-solid fa-bell-concierge"></i></div>
                     <h2>À VOTRE SERVICE</h2>
                     <div class="textes">
                         <p>Notre équipe vous accompagne tout au long de votre choix (simulations, projet,
@@ -171,7 +180,7 @@
                     </div>
                 </div>
                 <div class="service">
-                    <div class="rond"><i class="fa-solid fa-lock" ></i></div>
+                    <div class="rond"><i class="fa-solid fa-lock"></i></div>
                     <h2>PAIEMENT SÉCURISÉ</h2>
                     <div class="textes">
                         <p>Nous vous offrons plusieurs options de <b>paiement sécurisées</b> : carte de
@@ -182,11 +191,16 @@
                 </div>
             </div>
         </section>
+        <hr class="barre-horizontale">
     </main>
     <footer>
-        <!-- put the img images\plan.png -->
-         <img src="images\plan.png" alt="Plan de la galerie" id="plan"> 
-         <p>Recevez nos actualités, les nouvelles œuvres et les informations sur nos expositions directement dans votre boîte mail !</p>
+        <div class="plan-et-mail">
+            <img src="images\plan.png" alt="Plan de la galerie" id="plan">
+            <p>Recevez nos actualités, les nouvelles œuvres et les informations sur nos expositions directement dans
+                votre boîte mail !</p>
+            <form action="">
+                <input type="email" placeholder="Entrez votre email ici" class="email-input">
+                <button class="submit-button">envoyer</button>
+            </form>
+        </div>
     </footer>
-
-    
