@@ -26,7 +26,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 2.5% 10% 10% 10%;
     width: 100%;
     gap: 50px;
 }
@@ -160,37 +160,54 @@ h1 {
     width: 40%;
 }
 
+#dame-qui-marche{
+    height: 400px;
+}
+
 .img-texte div {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.la-galerie span, .nos-expositions span, .nos-services span {
+.nos-services {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.la-galerie{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.la-galerie span,
+.nos-expositions span,
+.nos-services span {
     color: #000000;
 }
 
-
-
-.la-galerie h1, .nos-expositions h1, .nos-services h1 {
+.la-galerie h1,
+.nos-expositions h1,
+.nos-services h1 {
     color: #545470;
     font-family: Livvic;
     font-size: 50px;
     font-style: normal;
     font-weight: 100;
-    line-height: normal;
     text-decoration: none;
     text-align: left;
 }
 
-
-
 .gallery {
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .artwork {
@@ -286,14 +303,14 @@ h1 {
     line-height: normal;
 }
 
-.gallery-2{
+.gallery-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
 }
 
-.gallery-2 .artwork{
+.gallery-2 .artwork {
     width: 100%;
     max-width: 560px;
     height: 481px;
@@ -307,17 +324,17 @@ h1 {
     padding-block: 15px;
 }
 
-.gallery-2 .artwork-title{
+.gallery-2 .artwork-title {
     margin: 0;
 }
 
-.nos-expositions{
+.nos-expositions {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.horaires{
+.horaires {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -326,11 +343,11 @@ h1 {
     align-items: center;
 }
 
-.horaires i.fa-regular.fa-clock{
+.horaires i.fa-regular.fa-clock {
     font-size: 35px;
 }
 
-.services{
+.services {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -338,7 +355,7 @@ h1 {
     width: 100%;
 }
 
-.service{
+.service {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -346,12 +363,12 @@ h1 {
     width: 100%;
 }
 
-.service i{
+.service i {
     font-size: 30px;
     color: white;
 }
 
-.service .rond{
+.service .rond {
     background: red;
     border-radius: 100%;
     padding: 10px;
@@ -363,18 +380,18 @@ h1 {
     align-items: center;
 }
 
-.service h2{
+.service h2 {
     font-size: 25px;
 }
 
-.service .textes{
+.service .textes {
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 15px;
 }
 
-h2{
+h2 {
     font-family: Inter;
     font-size: 30px;
     font-style: normal;
@@ -384,18 +401,18 @@ h2{
     color: #545470;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 100px;
     width: 100%;
-    gap: 20px;
+    gap: 150px;
     background-color: #3A3939;
 }
 
-footer p{
+footer p {
     color: white;
     font-family: Inter;
     font-size: 15px;
@@ -454,4 +471,27 @@ footer p{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border: 1px solid green;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 12px;
+}
+
+.contact i{
+    font-size: 35px;
+}
+
+.contact#adresse p{
+    text-align: left;
 }
