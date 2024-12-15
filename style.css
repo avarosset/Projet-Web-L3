@@ -26,13 +26,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.5% 10% 10% 10%;
+    padding: 10%;
     width: 100%;
-    gap: 50px;
+    gap: 100px;
 }
 
 section {
     width: 100%;
+}
+
+#texte-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 23px;
+    align-items: center;
 }
 
 #paul-dechewsky {
@@ -87,7 +95,7 @@ section {
     justify-content: center;
     gap: 30px;
     /* Espace entre les liens */
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /* Styles pour chaque lien du menu */
@@ -147,6 +155,10 @@ h1 {
     gap: 50px;
 }
 
+.art-expressioniste h1 {
+    font-size: 40px;
+}
+
 #gris {
     color: #545470;
 }
@@ -164,12 +176,16 @@ h1 {
     height: 400px;
 }
 
-.img-texte div {
+.paragraphes {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.paragraphes p{
+    width: 100%;
 }
 
 .nos-services {
@@ -216,11 +232,11 @@ h1 {
     align-items: center;
     overflow: hidden;
     text-align: center;
-    max-width: 344px;
-    height: 261px;
+    height: 300px;
 }
 
 .artwork div.tableau {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     /* Hauteur fixe pour toutes les images */
@@ -230,20 +246,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: end;
+    position: relative;
 }
 
-.artwork-details {
-    padding: 10px;
-    font-size: 14px;
-    color: #333;
+.artwork div.tableau:hover .artwork-details {
+    display: flex;
 }
 
-.artwork-title {
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 10px;
-    color: #333;
-}
 
 #eclats-de-silence {
     background-image: url("images/eclats-de-silence.png");
@@ -279,7 +288,7 @@ h1 {
 
 
 .artwork-details {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     width: 100%;
@@ -287,17 +296,21 @@ h1 {
     color: white;
     text-align: center;
     font-family: Inter;
-    font-size: 13px;
+    padding: 10px;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
+    position: absolute;
+    bottom: 0;
 }
 
 .artwork-title {
     color: #000;
     text-align: center;
     font-family: Inter;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 300;
     line-height: normal;
@@ -447,6 +460,8 @@ footer p {
     width: 476px;
     background: #F5F5F5;
     color: #939393;
+    /* change the font */
+    font-family: Arial, sans-serif;
 }
 
 .submit-button {
@@ -494,3 +509,146 @@ footer p {
     text-align: left;
 }
 
+/* responsive */
+@media screen and (max-width: 768px) {
+
+    p{
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .img-texte {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-texte img{
+        width: 70%;
+    }
+
+    #accueil{
+        height: 250px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #accueil h1{
+        font-size: 60px;
+    }
+
+    .texte-sous-image{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .button-explorer{
+        font-size: 25px;
+    }
+
+    .paragraphes{
+        gap: 20px;
+    }
+
+    #texte-intro{
+        padding: 100px 0;
+    }
+
+    .barre-horizontale {
+        height: 6px;
+    }
+
+    .menu{
+        padding: 50px 0;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery-2 {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .gallery-2 .artwork {
+        width: 100%;
+    }
+
+    .gallery-2 .artwork-title {
+        font-size: 20px;
+    }
+
+    .artwork-details {
+        font-size: 20px;
+    }
+
+    .la-galerie{
+        padding: 0 50px;
+    }
+
+    .nos-services {
+        gap: 50px;
+    }
+
+    .nos-expositions {
+        gap: 50px;
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .service {
+        gap: 10px;
+    }
+
+    .service h2 {
+        font-size: 30px;
+    }
+
+    .service .textes p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .plan-et-mail form{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .email-input {
+        width: 75%;
+    }
+
+    .submit-button {
+        width: 25%;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact i {
+        font-size: 25px;
+    }
+
+    .contact#adresse p {
+        font-size: 12px;
+    }
+}
